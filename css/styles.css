@@ -63,6 +63,7 @@ img {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  outline: 2px solid blue;
 }
 
 /* ========================---COMPONENTS---============================ */
@@ -76,6 +77,31 @@ img {
 
   color: var(--main-color);
 }
+
+.modal-btn {
+  /* width: 200px;
+  height: 50px; */ /* размер задавать кнопкам не нужно чтоб не было переполнение текстом*/
+  padding: 10px 32px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--white-color);
+  /* display: flex;
+align-items: center; */
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  border: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
 /* ========================---END COMPONENTS---============================ */
 /* ========================---Header---============================ */
 .header {
@@ -92,7 +118,7 @@ img {
 
 .header .logo {
   margin-right: 93px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 .navigation {
   display: flex;
@@ -120,7 +146,7 @@ img {
 }
 .header .address-list-item:last-child {
   margin-left: 50px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .logo {
@@ -170,6 +196,20 @@ img {
 /* ===============================--- end Header---============================  */
 
 /* ========================---Hero---====================== */
+.hero {
+  min-height: 600px; /*фиксированный размер не задаём в случае добавления текста он будет менятся*/
+  padding: 200px 0;
+  margin-bottom: 94px;
+
+  background-color: #2f303a;
+
+  /* outline: 2px solid tomato; */
+}
+.hero .container {
+  /* min-height: 200px; */
+  /* outline: 2px solid blue; */
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -178,30 +218,36 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  /* color: var(--white-color); */
-}
-.modal-btn {
-  width: 200px;
-  height: 50px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  text-align: center;
-  letter-spacing: 0.06em;
-
   color: var(--white-color);
-  /* display: flex;
-align-items: center; */
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
+
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  outline: 2px solid green;
+}
+
+.hero-btn {
+  margin-left: auto;
+  margin-right: auto;
 }
 /* ========================--- end Hero---====================== */
 
 /* ========================---benefit---====================== */
-.undertitle {
+.benefit {
+  min-height: 101px; /*фиксированный размер не задаём в случае добавления текста он будет менятся*/
+  margin-bottom: 94px;
+}
+
+.benefit-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefit-list-item {
+  min-height: 101px;
+  width: 270px;
+}
+.benefit-undertitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
@@ -209,6 +255,7 @@ align-items: center; */
   text-transform: uppercase;
 
   color: var(--main-color);
+  margin-bottom: 10px;
 }
 
 .benefit-text {
